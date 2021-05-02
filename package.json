@@ -1,14 +1,26 @@
 {
-  "name": "static-site",
+  "name": "readme-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Nineth week's homework for UNH Full-Stack Web Development Boot Camp.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Tracy Angell",
+  "license": "MIT",
   "dependencies": {
-    "inquirer": "^6.3.1"
-  }
+    "inquirer": "^6.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tracye1083/Readme-Generator.git"
+  },
+  "keywords": [
+    "bootcamp",
+    "readme"
+  ],
+  "bugs": {
+    "url": "https://github.com/tracye1083/Readme-Generator/issues"
+  },
+  "homepage": "https://github.com/tracye1083/Readme-Generator#readme"
 }

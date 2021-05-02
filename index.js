@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const inquirer = require('inquirer');
+
 
 // TODO: Create an array of questions for user input
 const questions = [];
@@ -58,11 +58,18 @@ inquirer.prompt([{
 
 .then((response) => {
     console.log(response)
-    let { fname, location, hobby, github, linkedin } = response;
+    let { title, description, installation, usage, license, contributing, tests, questionsUser, questionsEmail } = response;
     fs.writeFile("README.md", `
 
 # Title
 ${response.title}
+
+## Description
+${response.description}
+
+
+
+
 `, "utf8", (err) => err ? console.error(err) : console.log('Success!'));
 });
 
