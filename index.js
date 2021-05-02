@@ -1,24 +1,21 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-
-// TODO: Create an array of questions for user input
-// const questions = [];
-
-inquirer.prompt([{
+// An array of questions for user input
+const questions = [{
         type: 'input',
         message: 'What is the name of your project?',
         name: 'title',
     },
     {
         type: 'input',
-        message: 'Enter a description of your project: ',
+        message: 'Enter a brief description of your project:',
         name: 'description',
     },
     {
         type: 'input',
-        message: 'Enter installation instructions: ',
+        message: 'What javascript command is used to install the necessary dependencies?',
         name: 'installation',
     },
     {
@@ -39,7 +36,7 @@ inquirer.prompt([{
     },
     {
         type: 'input',
-        message: 'Enter testing instructions: ',
+        message: 'What javascript command is used to test your project?',
         name: 'tests',
     },
     {
@@ -52,19 +49,23 @@ inquirer.prompt([{
         message: 'What is your email address?',
         name: 'questionsEmail',
     },
-])
+];
 
 // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {}
 
-.then((response) => {
-    console.log(response)
-    let { title, description, installation, usage, license, contributing, tests, questionsUser, questionsEmail } = response;
-    fs.writeFile("README.md", `
+// TODO: Create a function to initialize app
+function init() {
+    inquirer.prompt(questions)
+        .then((response) => {
+            console.log(response)
+            let { title, description, installation, usage, license, contributing, tests, questionsUser, questionsEmail } = response;
 
+fs.writeFile("README.md", `
 # ${title}
 
 ## Description
+
 ${description}
 
 ## Table of Contents
@@ -82,30 +83,40 @@ ${description}
 * [Questions](#questions)
 
 ## Installation
+
+To install necessary dependencies, run the following command:
+
+~~~javascript
 ${installation}
+~~~
 
 ## Usage
+
 ${usage}
 
 ## License
+
 This project is licensed under the ${license} license.
 
 ## Contributing
 
+${contributing}
 
 ## Tests
 
+To run tests, run the following command:
+
+~~~javascript
+${tests}
+~~~
 
 ## Questions
+
 If you have any questions about the repo, open an issue or contact me directly at <${questionsEmail}>.
 You can find more of my work at [${questionsUser}](https://www.github.com/${questionsUser})
-
-
 `, "utf8", (err) => err ? console.error(err) : console.log('Success!'));
-});
-
-// TODO: Create a function to initialize app
-function init() {}
+        });
+}
 
 // Function call to initialize app
 init();
