@@ -4,7 +4,7 @@ const fs = require('fs');
 
 
 // TODO: Create an array of questions for user input
-const questions = [];
+// const questions = [];
 
 inquirer.prompt([{
         type: 'input',
@@ -62,13 +62,43 @@ inquirer.prompt([{
     let { title, description, installation, usage, license, contributing, tests, questionsUser, questionsEmail } = response;
     fs.writeFile("README.md", `
 
-# Title
-${response.title}
+# ${title}
 
 ## Description
-${response.description}
+${description}
+
+## Table of Contents
+
+* [Installation](#installation)
+
+* [Usage](#usage)
+
+* [License](#license)
+
+* [Contributing](#contributing)
+
+* [Tests](#tests)
+
+* [Questions](#questions)
+
+## Installation
+${installation}
+
+## Usage
+${usage}
+
+## License
+This project is licensed under the ${license} license.
+
+## Contributing
 
 
+## Tests
+
+
+## Questions
+If you have any questions about the repo, open an issue or contact me directly at <${questionsEmail}>.
+You can find more of my work at [${questionsUser}](https://www.github.com/${questionsUser})
 
 
 `, "utf8", (err) => err ? console.error(err) : console.log('Success!'));
