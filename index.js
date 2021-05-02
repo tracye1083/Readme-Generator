@@ -27,8 +27,9 @@ inquirer.prompt([{
         name: 'usage',
     },
     {
-        type: 'input',
+        type: 'list',
         message: 'Select a license',
+        choices: ['None', 'MIT License', 'GNU GPLv3', 'Apache License 2.0', 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', 'Eclipse Publice License 2.0', 'GNU AGPLv3', 'GNU GPLv2', 'GNU LGPLv2.1', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'The Unlicense'],
         name: 'license',
     },
     {
