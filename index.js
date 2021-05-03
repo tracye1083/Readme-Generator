@@ -1,6 +1,7 @@
 // Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./Develop/utils/generateMarkdown')
 
 // An array of questions for user input
 const questions = [{
@@ -61,7 +62,7 @@ function init() {
             console.log(response)
             let { title, description, installation, usage, license, contributing, tests, questionsUser, questionsEmail } = response;
 
-fs.writeFile("README.md", `
+            fs.writeFile("README.md", `
 # ${title}
 
 ## Description
