@@ -65,6 +65,8 @@ function init() {
             fs.writeFile("README.md", `
 # ${title}
 
+![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg "License Badge")
+
 ## Description
 
 ${description}
