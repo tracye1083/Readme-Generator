@@ -1,5 +1,6 @@
+# Testy McTesterson 4.1
 
-# Testing McTesterson
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Description
 
@@ -24,20 +25,20 @@ You can quickly and easily create a README file by using a command-line applicat
 To install necessary dependencies, run the following command:
 
 ~~~javascript
-npm install inquirer
+npm install
 ~~~
 
 ## Usage
 
-AT YOUR OWN RISK!
+AT YOUR OWN RISK
 
 ## License
 
-This project is licensed under the The Unlicense license.
+This project is licensed under the BSD 3-Clause "New" or "Revised" License license.
 
 ## Contributing
 
-Not accepting feedback. Currently accepting cookies.
+Not accepting contributions. Accepting cookies.
 
 ## Tests
 

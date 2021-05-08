@@ -1,9 +1,15 @@
 // Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const util = require('util');
 const generateMarkdown = require('./Develop/utils/generateMarkdown')
 
-// An array of questions for user input
+const writeFileAsync = util.promisify(fs.writeFile);
+
+const promptUser = () => {
+        return inquirer.prompt(questions);
+    }
+    // An array of questions for user input
 const questions = [{
         type: 'input',
         message: 'What is the name of your project?',
@@ -52,74 +58,13 @@ const questions = [{
     },
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+const init = () => {
+    promptUser()
+        .then((answers) => writeFileAsync("README.md", generateMarkdown(answers)))
+        .then(() => console.log("Successfully wrote to README.md!"))
+        .catch((err) => console.error(err));
+};
 
-// TODO: Create a function to initialize app
-function init() {
-    inquirer.prompt(questions)
-        .then((response) => {
-            console.log(response)
-            let { title, description, installation, usage, license, contributing, tests, questionsUser, questionsEmail } = response;
-
-            fs.writeFile("README.md", `
-# ${title}
-
-![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg "License Badge")
-
-## Description
-
-${description}
-
-## Table of Contents
-
-* [Installation](#installation)
-
-* [Usage](#usage)
-
-* [License](#license)
-
-* [Contributing](#contributing)
-
-* [Tests](#tests)
-
-* [Questions](#questions)
-
-## Installation
-
-To install necessary dependencies, run the following command:
-
-~~~javascript
-${installation}
-~~~
-
-## Usage
-
-${usage}
-
-## License
-
-This project is licensed under the ${license} license.
-
-## Contributing
-
-${contributing}
-
-## Tests
-
-To run tests, run the following command:
-
-~~~javascript
-${tests}
-~~~
-
-## Questions
-
-If you have any questions about the repo, open an issue or contact me directly at <${questionsEmail}>.
-You can find more of my work at [${questionsUser}](https://www.github.com/${questionsUser})
-`, "utf8", (err) => err ? console.error(err) : console.log('Success!'));
-        });
-}
 
 // Function call to initialize app
 init();
