@@ -1,6 +1,6 @@
-# Testy McTesterson 4.1
+# Testy McTesterson 5.20
 
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
 ## Description
 
@@ -30,15 +30,15 @@ npm install
 
 ## Usage
 
-AT YOUR OWN RISK
+Use this application to generate a README file about your project. Follow the prompts and be amazed with the results!
 
 ## License
 
-This project is licensed under the BSD 3-Clause "New" or "Revised" License license.
+This project is licensed under the Mozilla Public License 2.0 license.
 
 ## Contributing
 
-Not accepting contributions. Accepting cookies.
+Accepting all pull requests
 
 ## Tests
 
@@ -50,5 +50,6 @@ npm test
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at <me@my.co>.
+If you have any questions about the repo, open an issue or contact me directly at <tracye1083@gmail.com>. 
+
 You can find more of my work at [tracye1083](https://www.github.com/tracye1083)

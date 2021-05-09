@@ -79,7 +79,7 @@ ${data.tests}
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at <${data.questionsEmail}>.
+If you have any questions about the repo, open an issue or contact me directly at <${data.questionsEmail}>. \n
 You can find more of my work at [${data.questionsUser}](https://www.github.com/${data.questionsUser})
 `;
 }
