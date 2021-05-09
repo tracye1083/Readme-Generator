@@ -1,6 +1,6 @@
-# Testy McTesterson 5.20
+# Readme Generator
 
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
 ## Description
 
@@ -30,11 +30,11 @@ npm install
 
 ## Usage
 
-Use this application to generate a README file about your project. Follow the prompts and be amazed with the results!
+Simply follow the prompts to generate your automated README file for your unique project!
 
 ## License
 
-This project is licensed under the Mozilla Public License 2.0 license.
+This project is licensed under the The Unlicense license.
 
 ## Contributing
 
@@ -50,6 +50,6 @@ npm test
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at <tracye1083@gmail.com>. 
+If you have any questions about the repo, open an issue or contact me directly at <tracye1083@gmail.com>.
 
 You can find more of my work at [tracye1083](https://www.github.com/tracye1083)

@@ -1,12 +1,52 @@
 # README Generator
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Nineth week's homework for UNH Full-Stack Web Development Boot Camp.
 
 ***
 
 ## Description
 
-The goal of this project was to create using JavaScript a program that will prompt the user to answer questions about their repository and project to create a high quality README.
+The goal of this project was to create a program,  using JavaScript with [Inquirer package](https://www.npmjs.com/package/inquirer), that will prompt the user to answer questions about their repository and project to create a high quality README.
+
+***
+
+## Link to Full Video
+
+[README Generator Video](https://drive.google.com/file/d/1lEzr08r05ywc3lWTOMjQwqMomhXARdtx/view)
+
+***
+
+## GIF
+
+![README Generator Animated GIF](\Develop\Readme-Generator.gif)
+
+***
+
+## Technology Used
+
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Node.js](https://nodejs.org/en/)
+- [Inquirer package](https://www.npmjs.com/package/inquirer)
+- [GitHub GUI](https://desktop.github.com/)
+- [GitHub](https://www.github.com)
+
+***
+
+## Installation
+
+```javascript
+npm install
+```
+
+***
+
+## Questions
+
+If you have any questions about the repo, open an issue or contact me directly via [Email](mailto:tracye1083@gmail.com)
+
+You can find more of my work at [GitHub](https://www.github.com/tracye1083).
 
 ***
 
