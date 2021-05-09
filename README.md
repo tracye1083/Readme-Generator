@@ -1,55 +1,64 @@
-# Readme Generator
+# README Generator
 
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Nineth week's homework for UNH Full-Stack Web Development Boot Camp.
+
+***
 
 ## Description
 
-You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.
+The goal of this project was to create a program,  using JavaScript with [Inquirer package](https://www.npmjs.com/package/inquirer), that will prompt the user to answer questions about their repository and project to create a high quality README.
 
-## Table of Contents
+***
 
-* [Installation](#installation)
+## Link to Full Video
 
-* [Usage](#usage)
+[README Generator Video](https://drive.google.com/file/d/1lEzr08r05ywc3lWTOMjQwqMomhXARdtx/view)
 
-* [License](#license)
+***
 
-* [Contributing](#contributing)
+## GIF
 
-* [Tests](#tests)
+![README Generator Animated GIF](\Develop\Readme-Generator.gif)
 
-* [Questions](#questions)
+***
+
+## Technology Used
+
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Node.js](https://nodejs.org/en/)
+- [Inquirer package](https://www.npmjs.com/package/inquirer)
+- [GitHub GUI](https://desktop.github.com/)
+- [GitHub](https://www.github.com)
+
+***
 
 ## Installation
 
-To install necessary dependencies, run the following command:
-
-~~~javascript
+```javascript
 npm install
-~~~
+```
 
-## Usage
-
-Simply follow the prompts to generate your automated README file for your unique project!
-
-## License
-
-This project is licensed under the The Unlicense license.
-
-## Contributing
-
-Accepting all pull requests
-
-## Tests
-
-To run tests, run the following command:
-
-~~~javascript
-npm test
-~~~
+***
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at <tracye1083@gmail.com>.
+If you have any questions about the repo, open an issue or contact me directly via [Email](mailto:tracye1083@gmail.com)
 
-You can find more of my work at [tracye1083](https://www.github.com/tracye1083)
+You can find more of my work at [GitHub](https://www.github.com/tracye1083).
+
+***
+
+## License
+
+MIT License
+
+Copyright (c) 2021 Tracy Angell
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
