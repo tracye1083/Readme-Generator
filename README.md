@@ -20,7 +20,7 @@ The goal of this project was to create a program,  using JavaScript with [Inquir
 
 ## GIF
 
-![README Generator Animated GIF](\Develop\Readme-Generator.gif)
+![README Generator Animated GIF](Readme-Generator.gif)
 
 ***
 
